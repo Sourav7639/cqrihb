@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecuryHub Dashboard — Program Intelligence</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="customers">
+  <header>
+    <div class="navbar">
+      <a class="logo" href="index.html">
+        <span>SH</span>
+        SecuryHub
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-page="index">Home</a>
+        <a href="programs.html" data-page="programs">Programs</a>
+        <a href="researchers.html" data-page="researchers">Researchers</a>
+        <a href="customers.html" data-page="customers">Customers</a>
+        <a href="pentest.html" data-page="pentest">Pentest</a>
+        <a href="triage.html" data-page="triage">AI Triage</a>
+        <a href="resources.html" data-page="resources">Resources</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a class="nav-cta" href="pentest.html">Request Pentest</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>Program intelligence dashboard</h1>
+      <p class="muted">An example of the live dashboards available to SecuryHub customers.</p>
+      <div class="dashboard-grid">
+        <div class="widget">
+          <h4>Findings by severity</h4>
+          <div class="progress"><span style="width:64%"></span></div>
+          <p class="muted">Critical: 12 · High: 27 · Medium: 49 · Low: 22</p>
+        </div>
+        <div class="widget">
+          <h4>Resolution velocity</h4>
+          <p><span class="badge-trend up">▲ 12% faster</span></p>
+          <p class="muted">Median time to resolution improved this quarter.</p>
+        </div>
+        <div class="widget">
+          <h4>Researcher engagement</h4>
+          <div class="progress"><span style="width:82%"></span></div>
+          <p class="muted">Active researchers: 68 · New invites: 14</p>
+        </div>
+        <div class="widget">
+          <h4>Bounty spend</h4>
+          <p><span class="badge-trend down">▼ 6% vs plan</span></p>
+          <p class="muted">$286,400 paid · $305,000 budgeted</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light">
+      <h2>Triage queue</h2>
+      <p class="section-lead">Live snapshot of AI-prioritized submissions.</p>
+      <div class="table-wrapper">
+        <table id="triage-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Severity</th>
+              <th>SLA</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span>SH</span>SecuryHub</div>
+        <p>Classic bug bounty, refreshed with AI precision and white-glove support.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="triage.html">AI Triage</a></li>
+          <li><a href="dashboard.html">Customer Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Guides</a></li>
+          <li><a href="contact.html">Support</a></li>
+          <li><a href="customers.html">Customer Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@securyhub.com">hello@securyhub.com</a></li>
+          <li><a href="contact.html">Schedule a Call</a></li>
+          <li><a href="researchers.html">Join the Program</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2024</span> SecuryHub. All rights reserved.</span>
+      <span>Privacy · Responsible Disclosure</span>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
