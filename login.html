@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecuryHub Portal Login</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="researchers">
+  <header>
+    <div class="navbar">
+      <a class="logo" href="index.html">
+        <span>SH</span>
+        SecuryHub
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-page="index">Home</a>
+        <a href="programs.html" data-page="programs">Programs</a>
+        <a href="researchers.html" data-page="researchers">Researchers</a>
+        <a href="customers.html" data-page="customers">Customers</a>
+        <a href="pentest.html" data-page="pentest">Pentest</a>
+        <a href="triage.html" data-page="triage">AI Triage</a>
+        <a href="resources.html" data-page="resources">Resources</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a class="nav-cta" href="pentest.html">Request Pentest</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="login-grid">
+        <div class="login-hero">
+          <h2>Welcome back</h2>
+          <p>Access your queue, AI suggestions, and reward history. Multi-factor authentication is required on every login.</p>
+          <ul>
+            <li>AI-generated recon briefs waiting.</li>
+            <li>Latest program announcements.</li>
+            <li>Same-day payout tracker.</li>
+          </ul>
+        </div>
+        <div class="form-card">
+          <h2>Portal login</h2>
+          <form data-form="login" data-success="Success! Check your email for the magic link.">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input id="login-email" name="email" type="email" placeholder="you@example.com" data-required>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input id="login-password" name="password" type="password" placeholder="••••••••" data-required>
+            </div>
+            <div class="form-group">
+              <label for="login-mfa">One-time code</label>
+              <input id="login-mfa" name="mfa" type="text" placeholder="123456" data-required>
+              <span class="alert-inline">We sent a fresh code to your secure email alias.</span>
+            </div>
+            <button class="btn btn-primary" type="submit">Sign in</button>
+            <span class="form-message" hidden></span>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span>SH</span>SecuryHub</div>
+        <p>Classic bug bounty, refreshed with AI precision and white-glove support.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="triage.html">AI Triage</a></li>
+          <li><a href="dashboard.html">Customer Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Guides</a></li>
+          <li><a href="contact.html">Support</a></li>
+          <li><a href="customers.html">Customer Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@securyhub.com">hello@securyhub.com</a></li>
+          <li><a href="contact.html">Schedule a Call</a></li>
+          <li><a href="researchers.html">Join the Program</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2024</span> SecuryHub. All rights reserved.</span>
+      <span>Privacy · Responsible Disclosure</span>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

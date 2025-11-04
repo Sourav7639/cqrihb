@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecuryHub — Enterprise Bug Bounty Platform</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="index">
+  <header>
+    <div class="navbar">
+      <a class="logo" href="index.html">
+        <span>SH</span>
+        SecuryHub
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-page="index">Home</a>
+        <a href="programs.html" data-page="programs">Programs</a>
+        <a href="researchers.html" data-page="researchers">Researchers</a>
+        <a href="customers.html" data-page="customers">Customers</a>
+        <a href="pentest.html" data-page="pentest">Pentest</a>
+        <a href="triage.html" data-page="triage">AI Triage</a>
+        <a href="resources.html" data-page="resources">Resources</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a class="nav-cta" href="pentest.html">Request Pentest</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="highlight">Enterprise-grade bug bounty & pentest programs</div>
+          <h1>Secure at startup speed with the classic Bug Bounty platform built for today.</h1>
+          <p class="lead">SecuryHub connects your engineering teams with an elite global community and an AI-powered triage system that resolves critical issues 43% faster than traditional solutions.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="programs.html">Explore Programs</a>
+            <a class="btn btn-secondary" href="researchers.html">Join as Researcher</a>
+            <a class="btn btn-ghost" href="triage.html">See AI Triage</a>
+          </div>
+          <div class="hero-grid">
+            <div class="card">
+              <div class="icon-circle">⚡</div>
+              <h3>Instant signal boost</h3>
+              <p>Reduce noise with contextual insights, exploit path guidance, and tuned prioritization.</p>
+            </div>
+            <div class="card">
+              <div class="icon-circle">🌐</div>
+              <h3>Global coverage</h3>
+              <p>Certified researchers across 120+ countries cover every technology stack around the clock.</p>
+            </div>
+            <div class="card">
+              <div class="icon-circle">🛡️</div>
+              <h3>Compliance-first</h3>
+              <p>FedRAMP-aligned workflows, SOC 2-ready reporting, and executive-ready dashboards.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <h3>Live AI triage insights</h3>
+          <div class="statistic"><span>Critical queue</span><span>12 open ▼</span></div>
+          <div class="progress"><span style="width:62%"></span></div>
+          <div class="statistic"><span>Median SLA</span><span>5h 12m</span></div>
+          <div class="progress"><span style="width:84%"></span></div>
+          <div class="statistic"><span>Signal quality</span><span>97%</span></div>
+          <canvas aria-hidden="true"></canvas>
+          <p class="muted">Confidence heat-map illustrates how the AI engine groups correlated findings for analyst review.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light">
+      <h2>Why SecuryHub still feels classic but works like the future</h2>
+      <p class="section-lead">We modernized the timeless bug bounty program with machine learning triage, curated researcher cohorts, and service-grade pentesting so you get the proven results you expect with the velocity you need.</p>
+      <div class="grid columns-3">
+        <div class="card">
+          <div class="icon-circle">🤖</div>
+          <h3>AI triage copilots</h3>
+          <p>Combine human intuition with machine scoring. Our triage agents automatically de-duplicate findings, assign severity with context, and draft remediation briefs.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">🧭</div>
+          <h3>Guided onboarding</h3>
+          <p>Launch in days, not months. Templates for safe harbor policies, NDA workflows, and bounty ladders keep your program consistent across teams.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">📈</div>
+          <h3>Executive-ready analytics</h3>
+          <p>Track KPIs like mean-time-to-triage, payout ratios, and compliance status right from the integrated dashboard.</p>
+        </div>
+      </div>
+      <div class="stats-strip">
+        <div class="stat"><strong>8,200+</strong>Vulnerabilities fixed</div>
+        <div class="stat"><strong>43%</strong>Faster triage</div>
+        <div class="stat"><strong>98%</strong>Customer retention</div>
+        <div class="stat"><strong>24/7</strong>Analyst coverage</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Live vulnerability feed</h2>
+      <p class="section-lead">Transparent updates keep your stakeholders in the loop and show researchers we move quickly on every report.</p>
+      <div id="vulnerability-feed" class="grid columns-3"></div>
+    </section>
+
+    <section class="section light">
+      <h2>Classic workflow, modern outcomes</h2>
+      <p class="section-lead">Your success team handles researcher sourcing, vulnerability validation, and compliance checks while the AI engine cuts through noise.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>Kickoff</strong>
+          <div>
+            <h4>Scoping & Policy Design</h4>
+            <p>Define attack surface, set bounty ladder, and configure safe-harbor automation.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <strong>Launch</strong>
+          <div>
+            <h4>Signal Intelligence</h4>
+            <p>AI triage routes actionable findings to product teams with risk metadata and replay instructions.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <strong>Scale</strong>
+          <div>
+            <h4>Retros & Insights</h4>
+            <p>Monthly threat intelligence, root cause analytics, and security posture scoring.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-bar">
+        <div>
+          <h2>Ready for a pentest backed by bug bounty intelligence?</h2>
+          <p class="muted">Blend human expertise with AI ranking for the clearest picture of your risk in weeks, not quarters.</p>
+        </div>
+        <div>
+          <a class="btn btn-primary" href="pentest.html">Book a Workshop</a>
+          <p class="muted">Includes scope review, pricing, and curated researcher recommendations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span>SH</span>SecuryHub</div>
+        <p>Classic bug bounty, refreshed with AI precision and white-glove support.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="triage.html">AI Triage</a></li>
+          <li><a href="dashboard.html">Customer Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Guides</a></li>
+          <li><a href="contact.html">Support</a></li>
+          <li><a href="customers.html">Customer Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@securyhub.com">hello@securyhub.com</a></li>
+          <li><a href="contact.html">Schedule a Call</a></li>
+          <li><a href="researchers.html">Join the Program</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2024</span> SecuryHub. All rights reserved.</span>
+      <span>Privacy · Responsible Disclosure</span>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

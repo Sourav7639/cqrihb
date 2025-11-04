@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecuryHub Contact — Talk to Our Team</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+  <header>
+    <div class="navbar">
+      <a class="logo" href="index.html">
+        <span>SH</span>
+        SecuryHub
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-page="index">Home</a>
+        <a href="programs.html" data-page="programs">Programs</a>
+        <a href="researchers.html" data-page="researchers">Researchers</a>
+        <a href="customers.html" data-page="customers">Customers</a>
+        <a href="pentest.html" data-page="pentest">Pentest</a>
+        <a href="triage.html" data-page="triage">AI Triage</a>
+        <a href="resources.html" data-page="resources">Resources</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a class="nav-cta" href="pentest.html">Request Pentest</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="highlight">We're here to help</div>
+          <h1>Connect with SecuryHub</h1>
+          <p class="lead">Whether you're launching a program, scheduling a pentest, or applying as a researcher, our team responds within one business day.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact-form">Message Us</a>
+            <a class="btn btn-secondary" href="mailto:hello@securyhub.com">Email directly</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <h3>Office hours</h3>
+          <p class="muted">Monday - Friday · 8am to 6pm PT</p>
+          <div class="statistic"><span>Live chat</span><span>24/7</span></div>
+          <div class="statistic"><span>Average response</span><span>47 minutes</span></div>
+          <div class="statistic"><span>Customer satisfaction</span><span>98%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="contact-form">
+      <div class="form-card">
+        <h2>Send us a message</h2>
+        <p class="muted">Fill out the form and we'll route your request to the right specialist.</p>
+        <form data-form="contact" data-success="Thanks! A SecuryHub specialist will respond shortly.">
+          <div class="form-group">
+            <label for="contact-name">Full name</label>
+            <input id="contact-name" name="name" type="text" placeholder="Jamie Ops" data-required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Work email</label>
+            <input id="contact-email" name="email" type="email" placeholder="you@company.com" data-required>
+          </div>
+          <div class="form-group">
+            <label for="contact-role">Role</label>
+            <select id="contact-role" name="role" data-required>
+              <option value="">Select role</option>
+              <option>Security leader</option>
+              <option>Engineering leader</option>
+              <option>Researcher</option>
+              <option>Operations</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-topic">Topic</label>
+            <select id="contact-topic" name="topic" data-required>
+              <option value="">Select topic</option>
+              <option>Launch bug bounty</option>
+              <option>Pentest scoping</option>
+              <option>Researcher application</option>
+              <option>Partnership</option>
+              <option>Support</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Share details about your request." data-required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <span class="form-message" hidden></span>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid columns-3">
+        <div class="card">
+          <div class="icon-circle">🏢</div>
+          <h3>Headquarters</h3>
+          <p>San Francisco, CA<br>New York, NY<br>London, UK</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">📞</div>
+          <h3>Phone</h3>
+          <p>+1 (415) 555-0118<br>+44 20 7946 0118</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">🧑‍💼</div>
+          <h3>Media inquiries</h3>
+          <p><a href="mailto:press@securyhub.com">press@securyhub.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="cta-bar">
+        <div>
+          <h3>Prefer to schedule time?</h3>
+          <p class="muted">Pick a slot that works for your team.</p>
+        </div>
+        <div>
+          <a class="btn btn-primary" href="#">Open calendar</a>
+          <p class="muted">Automatically syncs across time zones.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span>SH</span>SecuryHub</div>
+        <p>Classic bug bounty, refreshed with AI precision and white-glove support.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="triage.html">AI Triage</a></li>
+          <li><a href="dashboard.html">Customer Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Guides</a></li>
+          <li><a href="contact.html">Support</a></li>
+          <li><a href="customers.html">Customer Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:hello@securyhub.com">hello@securyhub.com</a></li>
+          <li><a href="contact.html">Schedule a Call</a></li>
+          <li><a href="researchers.html">Join the Program</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2024</span> SecuryHub. All rights reserved.</span>
+      <span>Privacy · Responsible Disclosure</span>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
