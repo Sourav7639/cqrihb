@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecuryHub Responsible Disclosure Policy</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="program-securyhub">
+  <header>
+    <div class="navbar">
+      <a class="logo" href="index.html">
+        <span>SH</span>
+        SecuryHub
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-page="index">Home</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="programs.html" data-page="programs">Programs</a>
+        <a href="public-programs.html" data-page="public-programs">Public Programs</a>
+        <a href="private-programs.html" data-page="private-programs">Private Programs</a>
+        <a href="researchers.html" data-page="researchers">Researchers</a>
+        <a href="customers.html" data-page="customers">Customers</a>
+        <a href="pentest.html" data-page="pentest">Pentest</a>
+        <a href="triage.html" data-page="triage">AI Triage</a>
+        <a href="resources.html" data-page="resources">Resources</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a class="nav-cta" href="login.html">Client Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="page-intro-inner">
+        <h1>SecuryHub Responsible Disclosure Policy</h1>
+        <p>Thank you for researching SecuryHub. We welcome vulnerability reports that help keep our community and platform secure.</p>
+        <p class="muted">Last updated: March 2024</p>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="grid columns-2">
+        <div>
+          <h2>Program overview</h2>
+          <p>Our public program offers reputation-only rewards. Reputation points contribute to your eligibility for private program invitations. Monetary rewards are reserved for private engagements.</p>
+          <ul class="program-meta">
+            <li><span>Reward</span><strong>Reputation</strong></li>
+            <li><span>Response target</span><strong>2 business days</strong></li>
+            <li><span>Triaged by</span><strong>SecuryHub Security Operations</strong></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Rules of engagement</h3>
+          <ul class="checklist">
+            <li>Respect privacy—avoid accessing, modifying, or destroying data you do not own.</li>
+            <li>Limit testing to in-scope assets and avoid any actions that degrade service availability.</li>
+            <li>Stop testing immediately once you have proof of concept.</li>
+            <li>Use <a href="mailto:disclosure@securyhub.com">disclosure@securyhub.com</a> to submit reports securely.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid columns-2">
+        <div>
+          <h2>Scope</h2>
+          <p>The following assets and vulnerability categories are eligible for reputation rewards.</p>
+          <ul class="scope-list">
+            <li><strong>Assets:</strong> *.securyhub.com, including subdomains and associated APIs.</li>
+            <li>Authentication bypass and session management flaws.</li>
+            <li>SQL injection, command injection, XML external entity issues.</li>
+            <li>Server-side request forgery that exposes sensitive network paths.</li>
+            <li>Cross-site scripting (stored or reflected) impacting authenticated users.</li>
+            <li>Improper access controls or privilege escalation within customer portals.</li>
+            <li>Insecure direct object references involving researcher or customer data.</li>
+            <li>API authorization weaknesses with meaningful impact.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Out of scope</h2>
+          <p>The following findings are not eligible for recognition.</p>
+          <ul class="scope-list">
+            <li>Denial-of-service attacks or volumetric testing.</li>
+            <li>Use of automated scanners without meaningful analysis.</li>
+            <li>Self XSS or clickjacking on non-sensitive pages.</li>
+            <li>Missing SPF, DKIM, or DMARC records.</li>
+            <li>Open redirects without demonstrable impact.</li>
+            <li>Issues affecting third-party services outside *.securyhub.com.</li>
+            <li>Disclosure of public or low-sensitivity information.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="grid columns-2">
+        <div>
+          <h2>Review process</h2>
+          <p>When a report arrives, our AI analyst checks for duplicates, verifies whether the asset and vulnerability align with policy, and assigns an initial severity recommendation. Reports meeting the criteria advance to an in-review status for human validation.</p>
+          <p>For submissions with reproducible proofs-of-concept—such as SQL injection, XXE, cross-site scripting, server-side request forgery, or high-impact API exploitation—the AI analyst executes controlled validation using scripts or browser-based checks. Confirmed findings move directly to the triaged state for full analyst review.</p>
+        </div>
+        <div>
+          <h2>Communication commitments</h2>
+          <ul class="checklist">
+            <li>Initial acknowledgment within two business days.</li>
+            <li>Status updates every five business days while in review.</li>
+            <li>Detailed remediation notes once a fix is deployed.</li>
+            <li>Public recognition in our researcher hall of fame with your consent.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-bar">
+        <div>
+          <h2>Submit your findings securely</h2>
+          <p class="muted">Send encrypted reports to <a href="mailto:disclosure@securyhub.com">disclosure@securyhub.com</a>. Include clear reproduction steps and any supporting logs.</p>
+        </div>
+        <div>
+          <a class="btn btn-primary" href="public-programs.html">Back to public directory</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span>SH</span>SecuryHub</div>
+        <p>SecuryHub delivers managed bug bounty and pentest programs with experienced analysts and reliable support.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="customers.html">Customer stories</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="programs.html">Overview</a></li>
+          <li><a href="public-programs.html">Public program directory</a></li>
+          <li><a href="private-programs.html">Private invitations</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@securyhub.com">hello@securyhub.com</a> — general</li>
+          <li><a href="mailto:team@securyhub.com">team@securyhub.com</a> — services</li>
+          <li><a href="mailto:ctf@securyhub.com">ctf@securyhub.com</a> — private programs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2024</span> SecuryHub. All rights reserved.</span>
+      <span>Privacy · Responsible Disclosure</span>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
