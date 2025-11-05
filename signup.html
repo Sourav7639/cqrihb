@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a SecuryHub Account</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="signup">
+  <header>
+    <div class="navbar">
+      <a class="logo" href="index.html">
+        <span>SH</span>
+        SecuryHub
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-page="index">Home</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="programs.html" data-page="programs">Programs</a>
+        <a href="public-programs.html" data-page="public-programs">Public Programs</a>
+        <a href="private-programs.html" data-page="private-programs">Private Programs</a>
+        <a href="researchers.html" data-page="researchers">Researchers</a>
+        <a href="customers.html" data-page="customers">Customers</a>
+        <a href="pentest.html" data-page="pentest">Pentest</a>
+        <a href="triage.html" data-page="triage">AI Triage</a>
+        <a href="resources.html" data-page="resources">Resources</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a class="nav-cta" href="login.html">Client Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth">
+    <section class="auth-card">
+      <h1>Create your SecuryHub account</h1>
+      <p class="muted">Choose the option that matches how you plan to work with SecuryHub.</p>
+      <div class="signup-options">
+        <article class="card">
+          <h2>Researchers</h2>
+          <p>Access public programs, submit findings, and build reputation for private invitations.</p>
+          <a class="btn btn-secondary" href="mailto:hello@securyhub.com?subject=Researcher%20Application">Request researcher access</a>
+        </article>
+        <article class="card">
+          <h2>Organisations</h2>
+          <p>Launch a managed bug bounty or pentest engagement with dedicated analyst support.</p>
+          <a class="btn btn-secondary" href="mailto:team@securyhub.com?subject=SecuryHub%20Program%20Inquiry">Contact our services team</a>
+        </article>
+      </div>
+      <div class="auth-footer">
+        <p>Already have an account? <a href="login.html">Sign in</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><span>SH</span>SecuryHub</div>
+        <p>SecuryHub delivers managed bug bounty and pentest programs with experienced analysts and reliable support.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="customers.html">Customer stories</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="programs.html">Overview</a></li>
+          <li><a href="public-programs.html">Public program directory</a></li>
+          <li><a href="private-programs.html">Private invitations</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@securyhub.com">hello@securyhub.com</a> — general</li>
+          <li><a href="mailto:team@securyhub.com">team@securyhub.com</a> — services</li>
+          <li><a href="mailto:ctf@securyhub.com">ctf@securyhub.com</a> — private programs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2024</span> SecuryHub. All rights reserved.</span>
+      <span>Privacy · Responsible Disclosure</span>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
