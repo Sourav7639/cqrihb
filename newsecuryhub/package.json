@@ -1,0 +1,38 @@
+{
+  "name": "newsecuryhub",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.1.5",
+    "@supabase/auth-helpers-nextjs": "^0.10.0",
+    "@supabase/auth-helpers-react": "^0.5.6",
+    "@supabase/supabase-js": "^2.38.3",
+    "clsx": "^2.1.0",
+    "framer-motion": "^10.16.4",
+    "next": "13.5.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "zustand": "^4.4.2",
+    "nanoid": "4.0.2",
+    "swr": "2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.7",
+    "@types/react": "18.2.25",
+    "@types/react-dom": "18.2.10",
+    "autoprefixer": "10.4.16",
+    "postcss": "8.4.31",
+    "prettier": "3.0.3",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.2.2",
+    "@tailwindcss/forms": "0.5.6"
+  }
+}
